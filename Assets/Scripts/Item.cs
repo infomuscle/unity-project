@@ -1,0 +1,18 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Item : MonoBehaviour
+{
+    private string name;
+    
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+}
