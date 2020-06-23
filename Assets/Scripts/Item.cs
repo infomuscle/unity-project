@@ -5,7 +5,9 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     private string name;
-    
+    private string type;
+    private int price;
+
     void Start()
     {
         
