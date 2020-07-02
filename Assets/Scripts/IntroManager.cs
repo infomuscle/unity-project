@@ -24,7 +24,7 @@ public class IntroManager : MonoBehaviour
     public void btnTest()
     {
         Debug.Log("버튼이 눌렸다!");
-        Debug.Log("메인으로 가자!");
-        SceneManager.LoadScene("Main");
+        Debug.Log("고양이를 만나자!");
+        SceneManager.LoadScene("Meet");
     }
 }
