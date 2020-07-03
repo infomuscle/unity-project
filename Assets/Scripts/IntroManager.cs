@@ -6,25 +6,27 @@ using UnityEngine.UI;
 
 public class IntroManager : MonoBehaviour
 {
-    public Button btnAdopt;
     
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
             
     }
 
 
-    public void btnTest()
+    public void touchBtnAdopt()
     {
         Debug.Log("버튼이 눌렸다!");
         Debug.Log("고양이를 만나자!");
         SceneManager.LoadScene("Meet");
+    }
+
+    public void touchBtnSetting()
+    {
+        Debug.Log("환경설정으로 간다.");
     }
 }
