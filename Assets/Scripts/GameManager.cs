@@ -18,23 +18,15 @@ public class GameManager : MonoBehaviour
     }
 
     private static GameManager m_gameManager;
+
+    public string catName;
+    public string catSex;
     
     
-    
-    private GameObject btnAdopt;
-    
-    
-    
-    // Start is called before the first frame update
     void Start()
     {
-        btnAdopt = GameObject.Find("ButtonAdopt");
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log(PlayerPrefs.GetString("name"));
+        Debug.Log(PlayerPrefs.GetString("sex"));
+        Debug.Log(PlayerPrefs.GetString("breed"));
     }
 }

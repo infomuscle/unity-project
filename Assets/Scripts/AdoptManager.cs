@@ -33,7 +33,6 @@ public class AdoptManager : MonoBehaviour
     // 결정 버튼
     public Button buttonSelect;
 
-    
     private void OnEnable()
     {
         Debug.Log("Adopt OnEnable!");
@@ -41,6 +40,7 @@ public class AdoptManager : MonoBehaviour
     
     void Start()
     {
+
         Debug.Log("Adopt Start!");
         
         buttonMale = GameObject.Find("Canvas").transform.Find("ButtonMale").GetComponent<Button>();
@@ -58,18 +58,6 @@ public class AdoptManager : MonoBehaviour
         inputFieldName = GameObject.Find("Canvas").transform.Find("InputFieldName").GetComponent<InputField>();
         
         buttonSelect = GameObject.Find("Canvas").transform.Find("ButtonSelect").GetComponent<Button>();
-    }
-
-    void Update()
-    {
-            buttonMale.onClick.AddListener(()=>TouchButtonSex("M"));
-            buttonFemale.onClick.AddListener(()=>TouchButtonSex("F"));
-        
-            buttonMackerel.onClick.AddListener(()=>TouchButtonBreed("Mackerel"));
-            buttonCheese.onClick.AddListener(()=>TouchButtonBreed("Cheese"));
-            buttonTricolor.onClick.AddListener(()=>TouchButtonBreed("Tricolor"));
-
-            buttonSelect.onClick.AddListener(TouchButtonSelect);
     }
 
     public void TouchButtonSex(String sex)
@@ -133,11 +121,8 @@ public class AdoptManager : MonoBehaviour
         buttonCheese.gameObject.SetActive(false);
         buttonTricolor.gameObject.SetActive(false); 
         
-        // buttonSelect.gameObject.SetActive(false);
-
-        
-        textSex.text = "성별: " + sex;
-        textBreed.text = "품종: " + breed;
+        textSex.text += sex;
+        textBreed.text += breed;
         
         cat.SetActive(true);
         textSex.gameObject.SetActive(true);
@@ -151,8 +136,14 @@ public class AdoptManager : MonoBehaviour
         if (!String.IsNullOrEmpty(inputFieldName.text))
         {
             name = inputFieldName.text;
+            PlayerPrefs.SetString("name", name);
+            PlayerPrefs.SetString("breed", breed);
+            PlayerPrefs.SetString("sex", sex);
             SceneManager.LoadScene("Main");
         }
-
+        else
+        {
+            Debug.Log("Name Empty");
+        }
     }
 }

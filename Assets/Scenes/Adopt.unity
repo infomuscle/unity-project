@@ -203,15 +203,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: touchBtnFemale
-        m_Mode: 1
+      - m_Target: {fileID: 1549299314}
+        m_MethodName: TouchButtonBreed
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Tricolor
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &14712305
@@ -866,15 +866,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: touchBtnFemale
-        m_Mode: 1
+      - m_Target: {fileID: 1549299314}
+        m_MethodName: TouchButtonBreed
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Mackerel
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &749232641
@@ -1062,15 +1062,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: touchBtnFemale
-        m_Mode: 1
+      - m_Target: {fileID: 1549299314}
+        m_MethodName: TouchButtonBreed
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Cheese
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &865049078
@@ -1192,8 +1192,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: toucnBtnStart
+      - m_Target: {fileID: 1549299314}
+        m_MethodName: TouchButtonSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1321,7 +1321,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1060961680}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1549299314}
+        m_MethodName: TouchButtonSex
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: M
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1060961680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1587,7 +1598,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC131\uBCC4:"
+  m_Text: "\uC131\uBCC4: "
 --- !u!222 &1270186314
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1915,7 +1926,6 @@ MonoBehaviour:
   inputFieldName: {fileID: 0}
   textSex: {fileID: 0}
   textBreed: {fileID: 0}
-  isDone: 0
   isSexselected: 0
   isBreedselected: 0
   isNameselected: 0
@@ -2002,15 +2012,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: touchBtnFemale
-        m_Mode: 1
+      - m_Target: {fileID: 1549299314}
+        m_MethodName: TouchButtonSex
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: F
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1658912801
