@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Meet.unity
+    path: Assets/Scenes/Adopt.unity
     guid: d35504226f6a14b9587466efd1b366bc
   m_configObjects: {}

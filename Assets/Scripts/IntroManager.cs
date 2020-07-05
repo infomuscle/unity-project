@@ -9,20 +9,19 @@ public class IntroManager : MonoBehaviour
     
     void Start()
     {
-        
+        Debug.Log("Game Start!");
+ 
     }
 
-    void Update()
+    public void toucnBtnStart()
     {
-            
+        Debug.Log("Go Adopt!");
+        SceneManager.LoadScene("Adopt");
     }
-
-
     public void touchBtnAdopt()
     {
-        Debug.Log("버튼이 눌렸다!");
         Debug.Log("고양이를 만나자!");
-        SceneManager.LoadScene("Meet");
+        // SceneManager.LoadScene("Meet");
     }
 
     public void touchBtnSetting()
