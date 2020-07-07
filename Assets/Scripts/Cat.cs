@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Cat : MonoBehaviour
 {
     
     // Profile Variable
@@ -13,7 +13,7 @@ public class NewBehaviourScript : MonoBehaviour
     private string sex;
     private string stage;
     private int age;
-    private string type;
+    private string breed;
     
     // Status Variable
     private int fun;
@@ -21,29 +21,25 @@ public class NewBehaviourScript : MonoBehaviour
     private int full;
     private int health;
 
-    private void Awake()
+    public void Awake()
     {
         this.alive = true;
         
-        // init name
-        // init sex
+        this.name = PlayerPrefs.GetString("name");
+        this.sex = PlayerPrefs.GetString("sex");
+        this.breed = PlayerPrefs.GetString("breed");
+        
         this.stage = "Baby";
         this.age = 0;
-        // init type
-
     }
 
     void Start()
     {
-        
         this.fun = 50;
         this.clean = 50;
         this.full = 50;
         this.health = 50;
-    }
 
-    void Update()
-    {
-        
+        Debug.Log("Hi, my name is " + name);
     }
 }
