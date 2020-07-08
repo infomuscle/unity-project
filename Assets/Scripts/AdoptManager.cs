@@ -32,18 +32,23 @@ public class AdoptManager : MonoBehaviour
     private bool isSexSelected = false;
     private bool isBreedSelected = false;
     private bool isNameSelected = false;
-    
+
+    private void Awake()
+    {
+        sexButtons = new List<Button>();
+        breedButtons = new List<Button>();
+ 
+    }
+
     private void OnEnable()
     {
         Debug.Log("Adopt OnEnable!");
         
         Transform canvasTransform = GameObject.Find("Canvas").transform;
         
-        sexButtons = new List<Button>();
         sexButtons.Add(canvasTransform.Find("ButtonMale").GetComponent<Button>());
         sexButtons.Add(canvasTransform.Find("ButtonFemale").GetComponent<Button>()); 
         
-        breedButtons = new List<Button>();
         breedButtons.Add(canvasTransform.Find("ButtonMackerel").GetComponent<Button>());
         breedButtons.Add(canvasTransform.Find("ButtonCheese").GetComponent<Button>());
         breedButtons.Add(canvasTransform.Find("ButtonTricolor").GetComponent<Button>());
