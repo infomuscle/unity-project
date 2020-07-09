@@ -42,4 +42,9 @@ public class Cat : MonoBehaviour
 
         Debug.Log("Hi, my name is " + name);
     }
+
+    private void Update()
+    {
+        
+    }
 }
