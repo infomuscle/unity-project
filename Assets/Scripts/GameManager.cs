@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
-{
-    public static GameManager gameManager
-    {
-        get
-        {
-            if (m_gameManager == null)
-            {
+public class GameManager : MonoBehaviour {
+    public static GameManager gameManager {
+        get {
+            if (m_gameManager == null) {
                 m_gameManager = FindObjectOfType<GameManager>();
             }
+
             return m_gameManager;
         }
     }
@@ -21,10 +18,9 @@ public class GameManager : MonoBehaviour
 
     public string catName;
     public string catSex;
-    
-    
-    void Start()
-    {
+
+
+    void Start() {
         Debug.Log(PlayerPrefs.GetString("name"));
         Debug.Log(PlayerPrefs.GetString("sex"));
         Debug.Log(PlayerPrefs.GetString("breed"));
